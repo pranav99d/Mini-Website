@@ -1,54 +1,90 @@
 *{
-  box-sizing: border-box;
-  background-color:#00BFFF;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-#h1{
-  text-align: center;
-  font-size: 60px;
-  font-weight: bolder;
-  font-family: sans-serif;
-  color: white;
+body{
+    height: 100vh;
+    background: #00cccc;
 }
-#p1{
-  text-align: center;
-  color:  #FFFF00;
-  font-size: 25px;
-  font-weight:bold;
-  font-family: sans-serif;
+.container{
+    width: 40%;
+    min-width: 800px;
+    position: absolute;
+    min-height: 100px;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    background: #00cccc;
+    border-radius: 10px;
 }
-#p2{
-  text-align: center;
-  color: #008F11;
-  font-size: 25px;
-  font-weight: bold;
-  font-family: sans-serif;
+#newtask{
+    position: relative;
+    padding: 10px 20px;
 }
-#p3{
-  text-align: center;
-  color: black;
-  font-size: 25px;
-  font-weight: bold;
-  font-family:sans-serif;
+#newtask input{
+    width: 75%;
+    height: 45x;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
 }
-#input{
-  position: relative;
-  left: 5%;
-  align-items: center;
-  margin-left: 30px;
-  width: 75%;
-  height: 45px;
-  background-color: white;
-  border-radius: 5px;
+#newtask input:focus{
+    outline: none;
+    border-color: #00aaff;
 }
-#b1{position: relative;
-  align-items: center;
-  margin-left: 80px;
-  width: 4%;
-  height: 45px;
-  background-color: #1F456E;
-  border-radius: 5px;
+#newtask button{
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #009999;
+    border: none;
+    color: white;
+    outline: none;
 }
-#icon{
-  font-size: 25px;
-  background-color: #1F456E;
+#tasks{
+  background-color: #00cccc;
+    padding: 30px 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+.task{
+    background-color: 66ffe0;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #939697;
+    cursor: pointer;
+}
+.task span{
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.task button
+{
+  background-color: #66ffe0;
+    color: #ffffff;+
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
 }
